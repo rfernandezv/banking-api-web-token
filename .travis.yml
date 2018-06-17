@@ -6,3 +6,8 @@ deploy:
    api: https://api.run.pivotal.io
    organization: rfernandezv
    space: qa
+   skip-cleanup: true
+   github-token: gP0Ig5kY_K9eSqCeWqZQDA
+   keep-history: true
+  on:
+    branch: master
