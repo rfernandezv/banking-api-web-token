@@ -1,0 +1,6 @@
+---
+applications:
+- name: banking-qa
+  memory: 1536M
+  instances: 1
+  random-route: true
