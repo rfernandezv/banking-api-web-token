@@ -1,7 +1,6 @@
 ---
 applications:
 - name: banking-qa
-  path: /home/travis/build/rfernandezv/banking-api/target/clean-architecture-0.0.1-SNAPSHOT.jar
   memory: 1536M
   instances: 1
   random-route: true
