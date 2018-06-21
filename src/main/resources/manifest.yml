@@ -1,6 +1,0 @@
----
-applications:
-- name: banking
-  memory: 1536M
-  instances: 1
-  random-route: true
