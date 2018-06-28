@@ -16,7 +16,8 @@ public class Notification {
 	}
 
 	public String errorMessage() {
-		return errors.stream().map(e -> e.getMessage()).collect(Collectors.joining(", "));
+            return errors.stream().map(e -> e.getMessage()).collect(Collectors.joining(", "));    //rfv
+            //return errors.toString(); 
 	}
 
 	public boolean hasErrors() {

@@ -5,7 +5,7 @@ import java.util.Set;
 import banking.accounts.domain.entity.BankAccount;
 
 public class Customer {
-	private long id;
+    private long id;
     private String firstName;
     private String lastName;
     private Set<BankAccount> bankAccounts;

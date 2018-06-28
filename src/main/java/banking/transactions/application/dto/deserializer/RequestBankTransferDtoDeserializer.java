@@ -17,17 +17,17 @@ public class RequestBankTransferDtoDeserializer extends JsonDeserializer<Request
 	@Override
 	public RequestBankTransferDto deserialize(JsonParser jsonParser, DeserializationContext ctxt)
 			throws IOException, JsonProcessingException {
-		RequestBankTransferDto requestBankTransferDto = null;
-		try {
+            RequestBankTransferDto requestBankTransferDto = null;
+            try {
     		ObjectCodec objectCodec = jsonParser.getCodec();
-            JsonNode node = objectCodec.readTree(jsonParser);
-            String fromAccountNumber = node.get("fromAccountNumber").asText();
-            String toAccountNumber = node.get("toAccountNumber").asText();
-            BigDecimal amount = new BigDecimal(node.get("amount").asText());
-            requestBankTransferDto = new RequestBankTransferDto(fromAccountNumber, toAccountNumber, amount, RequestBodyType.VALID);
-    	} catch(Exception ex) {
-    		requestBankTransferDto = new RequestBankTransferDto("", "", null, RequestBodyType.INVALID);
-    	}
-        return requestBankTransferDto;
+                JsonNode node = objectCodec.readTree(jsonParser);
+                String fromAccountNumber = node.get("fromAccountNumber").asText();
+                String toAccountNumber = node.get("toAccountNumber").asText();
+                BigDecimal amount = new BigDecimal(node.get("amount").asText());
+                requestBankTransferDto = new RequestBankTransferDto(fromAccountNumber, toAccountNumber, amount, RequestBodyType.VALID);
+            } catch(Exception ex) {
+                    requestBankTransferDto = new RequestBankTransferDto("", "", null, RequestBodyType.INVALID);
+            }
+            return requestBankTransferDto;
 	}	
 }

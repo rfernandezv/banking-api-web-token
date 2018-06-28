@@ -16,6 +16,10 @@ public class BaseHibernateRepository<T> implements BaseRepository<T> {
 	protected Session getSession() {
 		return sessionFactory.getCurrentSession();
 	}
+        
+        protected Session getSessionLogin() {
+		return sessionFactory.openSession();
+	}
 
 	public void persist(T entity) {
 		getSession().persist(entity);

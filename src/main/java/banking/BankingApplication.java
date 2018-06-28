@@ -1,5 +1,9 @@
 package banking;
 
+import banking.user.application.UserApplicationService;
+import banking.user.domain.entity.Role;
+import banking.user.domain.entity.User;
+import banking.user.domain.repository.UserRepository;
 import java.io.IOException;
 import java.util.Properties;
 
@@ -21,7 +25,7 @@ import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import com.fasterxml.jackson.datatype.hibernate5.Hibernate5Module;
 
 @SpringBootApplication
-public class BankingApplication {
+public class BankingApplication  {
 
 	public static void main(String[] args) {
 		SpringApplication.run(BankingApplication.class, args);
@@ -38,7 +42,7 @@ public class BankingApplication {
 
 	@Value("${spring.jpa.show-sql}")
 	private String HIBERNATE_SHOW_SQL;
-
+        
 	@Bean
 	public LocalSessionFactoryBean sessionFactory() throws IOException {
 		LocalSessionFactoryBean sessionFactoryBean = new LocalSessionFactoryBean();
@@ -79,4 +83,5 @@ public class BankingApplication {
 	public ModelMapper modelMapper() {
 		return new ModelMapper();
 	}
+
 }
