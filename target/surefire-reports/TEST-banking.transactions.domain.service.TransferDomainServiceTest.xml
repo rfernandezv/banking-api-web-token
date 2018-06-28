@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="banking.transactions.domain.service.TransferDomainServiceTest" time="0.219" tests="6" errors="0" skipped="0" failures="0">
+<testsuite name="banking.transactions.domain.service.TransferDomainServiceTest" time="0.25" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_171\jre\bin"/>
@@ -60,10 +60,10 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="performTransferErrorEmptyAccount" classname="banking.transactions.domain.service.TransferDomainServiceTest" time="0.141"/>
-  <testcase name="performTransferErrorSameAccount" classname="banking.transactions.domain.service.TransferDomainServiceTest" time="0.016"/>
-  <testcase name="performTransferErrorNoMoneyOriginAccount" classname="banking.transactions.domain.service.TransferDomainServiceTest" time="0.015"/>
-  <testcase name="performTransferSuccess" classname="banking.transactions.domain.service.TransferDomainServiceTest" time="0.016"/>
+  <testcase name="performTransferErrorEmptyAccount" classname="banking.transactions.domain.service.TransferDomainServiceTest" time="0.156"/>
+  <testcase name="performTransferErrorSameAccount" classname="banking.transactions.domain.service.TransferDomainServiceTest" time="0"/>
+  <testcase name="performTransferErrorNoMoneyOriginAccount" classname="banking.transactions.domain.service.TransferDomainServiceTest" time="0.016"/>
+  <testcase name="performTransferSuccess" classname="banking.transactions.domain.service.TransferDomainServiceTest" time="0.031"/>
   <testcase name="performTransferErrorNegativeTransference" classname="banking.transactions.domain.service.TransferDomainServiceTest" time="0.031"/>
-  <testcase name="performTransferErrorLockedDestinationAccount" classname="banking.transactions.domain.service.TransferDomainServiceTest" time="0"/>
+  <testcase name="performTransferErrorLockedDestinationAccount" classname="banking.transactions.domain.service.TransferDomainServiceTest" time="0.016"/>
 </testsuite>
